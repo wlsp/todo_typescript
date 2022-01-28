@@ -1,0 +1,24 @@
+.toDone {
+  background: rgba(255, 255, 255, .25);
+  box-shadow: 0 .5rem 2rem 0 rgba(108, 108, 108, .37);
+  backdrop-filter: blur(.25rem);
+  -webkit-backdrop-filter: blur(.25rem);
+  border: .0625rem solid rgba(255, 255, 255, .18);
+  justify-content: space-between;
+  display: flex;
+  margin-top: .9375rem;
+  padding: 1.025rem;
+}
+
+.toDone--text {
+  border: none;
+  font-size: 1.25rem;
+}
+.toDone--text:focus {
+  outline: none;
+}
+
+.icon {
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}

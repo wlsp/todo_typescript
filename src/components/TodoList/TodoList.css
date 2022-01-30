@@ -1,4 +1,59 @@
-.todos {
-  max-width: 35rem;
+.todos-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
   width: 100%;
+}
+
+.todos {
+  background: linear-gradient(
+    -45deg,
+    rgb(255, 110, 127, .42),
+    rgba(255, 255, 255, .45)
+  );
+  border-radius: 30px;
+  padding: 1.385rem;
+}
+
+.dragactive {
+  background: linear-gradient(
+    -45deg,
+    rgb(255, 110, 127, .82),
+    rgba(255, 255, 255, .85)
+  );
+}
+
+.done {
+  background: linear-gradient(
+    45deg,
+    rgb(0, 191, 143, .42),
+    rgba(255, 255, 255, .45)
+  );
+}
+
+.dragcomplete {
+  background: linear-gradient(
+    45deg,
+    rgb(0, 191, 143, .82),
+    rgba(255, 255, 255, .85)
+  );
+}
+
+.todos__heading {
+  display: block;
+  font-size: 1.275rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .todos-container {
+    flex-direction: row;
+    max-width: 65rem;
+    padding: .75rem;
+    width: 100%;
+  }
+  .todos {
+    width: 100%;
+  }
 }

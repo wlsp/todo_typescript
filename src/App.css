@@ -1,11 +1,11 @@
 .App {
   align-items: center;
-  background-color: #674ea7;
+  background-color: #755eb1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
-  height: 100vh;
+  padding: 1.5rem;
+  min-height: 100vh;
 }
 
 .app--title {

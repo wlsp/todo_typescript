@@ -7,18 +7,30 @@
   justify-content: space-between;
   display: flex;
   margin-top: .9375rem;
-  padding: 1.025rem;
+  padding: .875rem;
+  transition: .5s;
+}
+
+.toDone:hover {
+  transform: scale(1.02);
 }
 
 .toDone--text {
   border: none;
   font-size: 1.25rem;
+  max-width: 14rem;
 }
 .toDone--text:focus {
   outline: none;
 }
 
 .icon {
-  font-size: 1.25rem;
-  margin-left: 1rem;
+  font-size: 1rem;
+  margin-left: .873rem;
+}
+
+@media screen and (min-width:1024px) {
+  .icon {
+    font-size: 1.25rem;
+  }
 }
